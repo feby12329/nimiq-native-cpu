@@ -60,7 +60,7 @@ int main (int argc, const char *argv[]) {
       ("miner", value<std::string> ()->default_value ("core"), "Miner to use")
       ("host", value<std::string> ()->default_value ("pool.acemining.co:8443"), "IP address + port of remote host to use")
       ("method", value<std::string> ()->default_value ("work"), "Method to use to get data from the host")
-      ("address", value<std::string> ()->default_value ("NQ50 44BA 44R3 BFHX 8648 3UTH LX98 KJYC TV5P"), "Override mining address")
+      ("address", value<std::string> (), "Override mining address")
       ("extra-data", value<std::string> (), "Override extra-data");
 
   variables_map vm;
